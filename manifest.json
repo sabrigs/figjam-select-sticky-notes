@@ -1,0 +1,10 @@
+{
+  "name": "Select Sticky Notes",
+  "id": "1087014601533780227",
+  "api": "1.0.0",
+  "main": "build/code.js",
+  "editorType": [
+    "figjam"
+  ],
+  "ui": "ui.html"
+}

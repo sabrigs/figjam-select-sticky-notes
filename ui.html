@@ -1,0 +1,29 @@
+<!-- Standard link tag-->
+<link rel="stylesheet" href="https://unpkg.com/figma-plugin-ds@1.0.1/dist/figma-plugin-ds.css">
+
+<style>
+body {
+  padding: 24px;
+}
+
+button#select {
+  font-size: 16px;
+  min-height: 32px;
+  height: unset;
+  padding: 10px;
+}
+</style>
+
+<h2>Select Sticky Notes</h2>
+
+<p>1. Select a sticky note.</p>
+<p>2. Click in the button below to select all sticky notes from the same author.</p>
+
+<button class='button button--primary' id="select" >Select all from the author</button> 
+
+<script>
+document.getElementById('select').onclick = () => {
+  parent.postMessage({ pluginMessage: { type: 'selectStickyNotes' } }, '*')
+}
+
+</script>
